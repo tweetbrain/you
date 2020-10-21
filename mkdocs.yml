@@ -6,3 +6,5 @@ repo_name: tweetbrain/you
 
 theme:
   name: material
+  palette:
+    scheme: slate
