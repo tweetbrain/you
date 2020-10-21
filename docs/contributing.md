@@ -10,8 +10,11 @@
         └───src
 ```
 ### Backend
-⚒ The heavy work is done here.
-
+**⚒ The heavy work is done here.**
+```
+└───tweetbrain
+    └───backend
+```
 We are using a Python web framework called Fast API which is great for quickly creating Web APIs, including documentation.
 
 [🧠 Learn more about Fast API](https://docs.tweetbrain.tisuela.com/backend/fastapi/)
@@ -21,8 +24,11 @@ All configuration files (e.g. `requirements.txt`) are within `tweetbrain/backend
 For information about contributing to the backend
 
 ### Front End
-✨ The pretty work is done here.
-
+**✨ The pretty work is done here.**
+```
+└───tweetbrain
+    └───frontend
+```
 We are using React to develop the front end (no specific framework chosen).
 
 [🧠 Learn more about React](https://docs.tweetbrain.tisuela.com/frontend/react/)
