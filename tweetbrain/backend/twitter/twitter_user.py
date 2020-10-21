@@ -17,3 +17,14 @@ class TwitterUser:
         self.bio = self.user.description
         self.timeline = self.user.timeline(count=200)
         self.num_of_tweets = len(self.timeline)
+
+
+    def top_words(self) -> list:
+        results = list()
+
+        return [
+            "chicken",
+            "nuggets",
+            "singing",
+            "songs"
+        ]
