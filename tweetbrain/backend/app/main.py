@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from starlette.requests import Request
-from starlette.graphql import GraphQLApp
 
 tags_metadata = [
     {
@@ -20,8 +19,6 @@ app = FastAPI(
     redoc_url="/docs",
     docs_url="/api/v1",
 )
-
-
 
 
 @app.get("/hello")
