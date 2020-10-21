@@ -12,3 +12,4 @@ class Config:
     CONSUMER_SECRET = secrets["CONSUMER_SECRET"]
     ACCESS_TOKEN = secrets["ACCESS_TOKEN"]
     ACCESS_SECRET = secrets["ACCESS_SECRET"]
+    GENIUS_ACCESS_TOKEN = secrets["GENIUS_ACCESS_TOKEN"]
