@@ -1,5 +1,5 @@
-from ....twitter.twitter_user import TwitterUser
-from ....genius.match import Match
+from .....twitter.twitter_user import TwitterUser
+from .....genius.match import Match
 
 
 user = TwitterUser("MontellFish")
