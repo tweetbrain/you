@@ -2,6 +2,31 @@
 
 ## Structure
 
+=== "C"
+
+    ``` c
+    #include <stdio.h>
+
+    int main(void) {
+      printf("Hello world!\n");
+      return 0;
+    }
+    ```
+
+=== "C++"
+
+    ``` c++
+    #include <iostream>
+
+    int main(void) {
+      std::cout << "Hello world!" << std::endl;
+      return 0;
+    }
+    ```
+
+
+
+
 The backend is divided into three parts.
 ```
 └───backend
@@ -11,6 +36,7 @@ The backend is divided into three parts.
       └───twitter <-- Objects and tests for Twitter API
 ```
 `genius` and `twitter` are called within `songs`.
+
 
 ### app - Fast API
 Our main app uses the Fast API Python Web Framework
@@ -63,19 +89,22 @@ You should find yourself here:
 There are a good amount of depencies for this project -- it will be good practice to use a virtual environment, albeit not necessary.
 
 === "macOS/Linux"
-  ```
-  python3 -m venv env
-  ```
+
+    ```
+    python3 -m venv env
+    ```
 
 === "Windows Command Line"
-  ```
-  python -m venv env
-  ```
+
+    ```
+    python -m venv env
+    ```
 
 === "Windows Powershell"
-  ```
-  python -m venv env
-  ```
+
+    ```
+    python -m venv env
+    ```
 
 The last argument is the location to create the virtual environment. Generally, you can just create this in your project and call it env.
 
@@ -83,17 +112,22 @@ The last argument is the location to create the virtual environment. Generally, 
 **✅ Activate virtual environment**
 
 === "macOS/Linux"
-  ```
-  source env/bin/activate
-  ```
+
+    ```
+    source env/bin/activate
+    ```
+
 === "Windows Command Line"
-  ```
-  .\env\Scripts\activate.bat
-  ```
+
+    ```
+    .\env\Scripts\activate.bat
+    ```
+
 === "Windows Powershell"
-  ```
-  .\env\Scripts\activate.ps1
-  ```
+
+    ```
+    .\env\Scripts\activate.ps1
+    ```
 
 
 **📦 Navigate to the repository folder and install packages**
@@ -124,47 +158,52 @@ The environmental variables are specified within [`tweetbrain/backend/config.py`
 
 To set environmental variables, follow these instructions:
 
-
-!!! Twitter API Tokens/Secrets
-
 === "macOS/Linux"
-  ``` bash
-  export CONSUMER_KEY=your_consumer_key
-  export CONSUMER_SECRET=your_consumer_secret
-  export ACCESS_TOKEN=your_access_token
-  export ACCESS_SECRET=your_access_secret
-  ```
+
+      ``` bash
+      export CONSUMER_KEY=your_consumer_key
+      export CONSUMER_SECRET=your_consumer_secret
+      export ACCESS_TOKEN=your_access_token
+      export ACCESS_SECRET=your_access_secret
+      ```
 
 === "Windows Command Line"
-  ``` bat
-  set CONSUMER_KEY=your_consumer_key
-  set CONSUMER_SECRET=your_consumer_secret
-  set ACCESS_TOKEN=your_access_token
-  set ACCESS_SECRET=your_access_secret
-  ```
+
+      ``` bat
+      set CONSUMER_KEY=your_consumer_key
+      set CONSUMER_SECRET=your_consumer_secret
+      set ACCESS_TOKEN=your_access_token
+      set ACCESS_SECRET=your_access_secret
+      ```
 
 === "Windows Powershell"
-  ``` powershell
-  $env:CONSUMER_KEY="your_consumer_key"
-  $env:CONSUMER_SECRET="your_consumer_secret"
-  $env:ACCESS_TOKEN="your_access_token"
-  $env:ACCESS_SECRET="your_access_secret"
-  ```
+
+      ``` powershell
+      $env:CONSUMER_KEY="your_consumer_key"
+      $env:CONSUMER_SECRET="your_consumer_secret"
+      $env:ACCESS_TOKEN="your_access_token"
+      $env:ACCESS_SECRET="your_access_secret"
+      ```
 
 **Genius API Tokens**
 
 === "macOS/Linux"
-  ```
-  export GENIUS_ACCESS_TOKEN=your_genius_access_token
-  ```
+
+    ```
+    export GENIUS_ACCESS_TOKEN=your_genius_access_token
+    ```
+
 === "Windows Command Line"
-  ```
-  set GENIUS_ACCESS_TOKEN=your_genius_access_token
-  ```
+
+    ```
+    set GENIUS_ACCESS_TOKEN=your_genius_access_token
+    ```
+    
 === "Windows Powershell"
-  ```
-  $env:GENIUS_ACCESS_TOKEN="your_genius_access_token"
-  ```
+
+    ```
+    $env:GENIUS_ACCESS_TOKEN="your_genius_access_token"
+    ```
 
 
 **🦄 Run Fast API using uvicorn**
