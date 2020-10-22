@@ -150,7 +150,7 @@ Download that file, and paste it within `tweetbrain/backend`:
         └───secrets.json
 ```
 
-### Method 2: Set environmental variables
+#### Method 2: Set environmental variables
 
 🌳 If you do not have our json file, or if you cannot use it for some reason, you will need to write environmental variables within your terminal. **These variables must be made in the terminal/shell where your virtual environment is running**
 
@@ -198,7 +198,7 @@ To set environmental variables, follow these instructions:
     ```
     set GENIUS_ACCESS_TOKEN=your_genius_access_token
     ```
-    
+
 === "Windows Powershell"
 
     ```
