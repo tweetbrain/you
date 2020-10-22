@@ -8,3 +8,7 @@ theme:
   name: material
   palette:
     scheme: slate
+
+markdown_extensions:
+  - pymdownx.tabbed
+  - pymdownx.superfences
