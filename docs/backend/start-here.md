@@ -42,7 +42,7 @@ The backend is divided into three parts.
 Our main app uses the Fast API Python Web Framework
 Info [here](https://docs.tweetbrain.tisuela.com/backend/fastapi/)
 
-## songs - Fast API
+### songs - Fast API
 This portion of the application holds all our routes for our Song API endpoints.
 
 Our objects from `genius` and `twitter` are used within `songs` to return songs which match a user's timeline (timeline = list of tweets).
@@ -205,6 +205,7 @@ To set environmental variables, follow these instructions:
     $env:GENIUS_ACCESS_TOKEN="your_genius_access_token"
     ```
 
+### Running the Backend API
 
 **🦄 Run Fast API using uvicorn**
 
