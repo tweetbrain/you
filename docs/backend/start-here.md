@@ -86,19 +86,15 @@ The last argument is the location to create the virtual environment. Generally, 
 **✅ Activate virtual environment**
 
 === "macOS/Linux"
-
   ```
   source env/bin/activate
   ```
-
 === "Windows Command Line"
 
   ```
   .\env\Scripts\activate.bat
   ```
-
 === "Windows Powershell"
-
   ```
   .\env\Scripts\activate.ps1
   ```
@@ -141,18 +137,14 @@ To set environmental variables, follow these instructions:
   export ACCESS_TOKEN=your_access_token
   export ACCESS_SECRET=your_access_secret
   ```
-
 === "Windows Command Line"
-
   ```
   set CONSUMER_KEY=your_consumer_key
   set CONSUMER_SECRET=your_consumer_secret
   set ACCESS_TOKEN=your_access_token
   set ACCESS_SECRET=your_access_secret
   ```
-
 === "Windows Powershell"
-
   ```
   $env:CONSUMER_KEY="your_consumer_key"
   $env:CONSUMER_SECRET="your_consumer_secret"
@@ -163,17 +155,13 @@ To set environmental variables, follow these instructions:
 **Genius API Tokens**
 
 === "macOS/Linux"
-
   ```
   export GENIUS_ACCESS_TOKEN=your_genius_access_token
   ```
-
 === "Windows Command Line"
-
   ```
   set GENIUS_ACCESS_TOKEN=your_genius_access_token
   ```
-
 === "Windows Powershell"
 
   ```
