@@ -8,5 +8,5 @@ class Match:
         pass
 
 
-    def search_song(self, query: str):
+    def search_songs(self, query: str):
         return self.api.search_songs(query)

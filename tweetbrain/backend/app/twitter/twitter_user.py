@@ -52,7 +52,7 @@ class TwitterUser:
         all_words = list()
 
         for tweet in self.timeline:
-            print(tweet.text, "\n-----\n\n\n")
+            # print(tweet.text, "\n-----\n\n\n")
             words = self.tokenizer.tokenize(tweet.text)
             for word in words:
                 if len(word) > word_len_min and word not in self.stopwords:

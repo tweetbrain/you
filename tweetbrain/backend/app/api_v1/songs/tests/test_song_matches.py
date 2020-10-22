@@ -1,5 +1,5 @@
-from .....twitter.twitter_user import TwitterUser
-from .....genius.match import Match
+from ....twitter.twitter_user import TwitterUser
+from ....genius.match import Match
 
 
 user = TwitterUser("MontellFish")
@@ -17,4 +17,4 @@ def test_basic_match():
             break
 
     print(query)
-    print(matcher.search_song(query))
+    print(matcher.search_songs(query))
