@@ -128,8 +128,8 @@ The environmental variables are specified within [`tweetbrain/backend/config.py`
 
 To set environmental variables, follow these instructions:
 
-**Twitter API Tokens/Secrets**
 
+!!! Twitter API Tokens/Secrets
 === "macOS/Linux"
   ``` bash
   export CONSUMER_KEY=your_consumer_key

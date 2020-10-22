@@ -8,5 +8,8 @@ def match_with_top_words(twitter_handle: str):
     songs = match.search_songs(top_words[0][0])
 
 
+    results = list()
 
-    return songs["hits"][0]["result"]
+    for song in songs["hits"]:
+        results.append(song["result"])
+    return results
