@@ -11,4 +11,3 @@ theme:
 
 markdown_extensions:
   - pymdownx.tabbed
-  - pymdownx.superfences
