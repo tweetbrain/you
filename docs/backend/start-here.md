@@ -130,21 +130,27 @@ To set environmental variables, follow these instructions:
 
 
 !!! Twitter API Tokens/Secrets
+
 === "macOS/Linux"
+
   ``` bash
   export CONSUMER_KEY=your_consumer_key
   export CONSUMER_SECRET=your_consumer_secret
   export ACCESS_TOKEN=your_access_token
   export ACCESS_SECRET=your_access_secret
   ```
+
 === "Windows Command Line"
+
   ``` bat
   set CONSUMER_KEY=your_consumer_key
   set CONSUMER_SECRET=your_consumer_secret
   set ACCESS_TOKEN=your_access_token
   set ACCESS_SECRET=your_access_secret
   ```
+  
 === "Windows Powershell"
+
   ``` powershell
   $env:CONSUMER_KEY="your_consumer_key"
   $env:CONSUMER_SECRET="your_consumer_secret"
