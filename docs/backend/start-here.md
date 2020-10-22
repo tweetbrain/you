@@ -5,15 +5,21 @@
 The backend is divided into three parts.
 ```
 └───backend
-    ├───app <-- Fast API app
-    ├───genius <-- Class and methods for Genius API
-    └───twitter <-- Class and method for Twitter API
+    └───app <-- Our main Backend App (Fast API)
+      ├───songs <-- routes for our Song matching API
+      ├───genius <-- Objects and tests for Genius API
+      └───twitter <-- Objects and tests for Twitter API
 ```
-
-`genius` and `twitter` will be called within `app` for our final product.
+`genius` and `twitter` are called within `songs`.
 
 ### app - Fast API
+Our main app uses the Fast API Python Web Framework
 Info [here](https://docs.tweetbrain.tisuela.com/backend/fastapi/)
+
+## songs - Fast API
+This portion of the application holds all our routes for our Song API endpoints.
+
+Our objects from `genius` and `twitter` are used within `songs` to return songs which match a user's timeline (timeline = list of tweets).
 
 ### genius - lyricgenius
 
@@ -33,7 +39,7 @@ In addition to that, we are using `nltk` to process the tweets and figure out th
 ## Quick Start
 Below are the instructions for running Fast API locally
 
-
+### Installation
 **👩‍👧 Clone repository**
 ```
 git clone https://github.com/tweetbrain/you
@@ -44,6 +50,12 @@ Navigate to `tweetbrain/backend`
 ```
 cd tweetbrain
 cd backend
+```
+
+You should find yourself here:
+```
+└───tweetbrain
+    └───backend <-- you are here
 ```
 
 **🐍 Create Python virtual environment**
@@ -72,6 +84,70 @@ One Windows Powershell
 **📦 Navigate to the repository folder and install packages**
 
 `python -m pip install -r requirements.txt`
+
+
+### Configuration
+**🔐 This portion provides authentication information, which is NOT in our repository**
+
+#### Method 1: secrets.json
+
+💾 Those who are a part of our Web Jam team have access to a `secrets.json` file. This is the simplest way -- even if you don't have this file, you can make your own with the same name. 
+Download that file, and paste it within `tweetbrain/backend`:
+```
+└───tweetbrain
+    └───backend <-- paste secrets.json within here
+        └───secrets.json
+```
+
+### Method 2: Set environmental variables
+
+🌳 If you do not have our json file, or if you cannot use it for some reason, you will need to write environmental variables within your terminal. **These variables must be made in the terminal/shell where your virtual environment is running**
+
+The environmental variables are specified within [`tweetbrain/backend/config.py`](https://github.com/tweetbrain/you/blob/main/tweetbrain/backend/app/config.py).
+
+To set environmental variables, follow these instructions:
+
+**Twitter API Tokens/Secrets**
+=== "macOS/Linux"
+```
+export CONSUMER_KEY=your_consumer_key
+export CONSUMER_SECRET=your_consumer_secret
+export ACCESS_TOKEN=your_access_token
+export ACCESS_SECRET=your_access_secret
+```
+
+=== "Windows Command Line"
+```
+set CONSUMER_KEY=your_consumer_key
+set CONSUMER_SECRET=your_consumer_secret
+set ACCESS_TOKEN=your_access_token
+set ACCESS_SECRET=your_access_secret
+```
+
+=== "Windows Powershell"
+```
+$env:CONSUMER_KEY="your_consumer_key"
+$env:CONSUMER_SECRET="your_consumer_secret"
+$env:ACCESS_TOKEN="your_access_token"
+$env:ACCESS_SECRET="your_access_secret"
+```
+
+**Genius API Tokens**
+
+=== "macOS/Linux"
+```
+export GENIUS_ACCESS_TOKEN=your_genius_access_token
+```
+
+=== "Windows Command Line"
+```
+set GENIUS_ACCESS_TOKEN=your_genius_access_token
+```
+
+=== "Windows Powershell"
+```
+$env:GENIUS_ACCESS_TOKEN="your_genius_access_token"
+```
 
 
 **🦄 Run Fast API using uvicorn**
