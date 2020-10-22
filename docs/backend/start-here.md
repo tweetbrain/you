@@ -62,28 +62,53 @@ You should find yourself here:
 
 There are a good amount of depencies for this project -- it will be good practice to use a virtual environment, albeit not necessary.
 
-On macOS and Linux:
-`python3 -m virtualenv env`
+=== "macOS/Linux"
 
-On Windows:
-`python -m venv env`
-The second argument is the location to create the virtual environment. Generally, you can just create this in your project and call it env.
+  ```
+  python3 -m venv env
+  ```
+
+=== "Windows Command Line"
+
+  ```
+  python -m venv env
+  ```
+
+=== "Windows Powershell"
+
+  ```
+  python -m venv env
+  ```
+
+The last argument is the location to create the virtual environment. Generally, you can just create this in your project and call it env.
 
 
 **✅ Activate virtual environment**
 
-On macOS and Linux:
-`source env/bin/activate`
+=== "macOS/Linux"
 
-On Windows Command Line:
-`.\env\Scripts\activate.bat`
+  ```
+  source env/bin/activate
+  ```
 
-One Windows Powershell
-`.\env\Scripts\activate.ps1`
+=== "Windows Command Line"
+
+  ```
+  .\env\Scripts\activate.bat
+  ```
+
+=== "Windows Powershell"
+
+  ```
+  .\env\Scripts\activate.ps1
+  ```
+
 
 **📦 Navigate to the repository folder and install packages**
 
-`python -m pip install -r requirements.txt`
+```
+python -m pip install -r requirements.txt
+```
 
 
 ### Configuration
