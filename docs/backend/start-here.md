@@ -91,7 +91,7 @@ One Windows Powershell
 
 #### Method 1: secrets.json
 
-💾 Those who are a part of our Web Jam team have access to a `secrets.json` file. This is the simplest way -- even if you don't have this file, you can make your own with the same name. 
+💾 Those who are a part of our Web Jam team have access to a `secrets.json` file. This is the simplest way -- even if you don't have this file, you can make your own with the same name.
 Download that file, and paste it within `tweetbrain/backend`:
 ```
 └───tweetbrain
@@ -109,45 +109,51 @@ To set environmental variables, follow these instructions:
 
 **Twitter API Tokens/Secrets**
 === "macOS/Linux"
-```
-export CONSUMER_KEY=your_consumer_key
-export CONSUMER_SECRET=your_consumer_secret
-export ACCESS_TOKEN=your_access_token
-export ACCESS_SECRET=your_access_secret
-```
+
+  ```
+  export CONSUMER_KEY=your_consumer_key
+  export CONSUMER_SECRET=your_consumer_secret
+  export ACCESS_TOKEN=your_access_token
+  export ACCESS_SECRET=your_access_secret
+  ```
 
 === "Windows Command Line"
-```
-set CONSUMER_KEY=your_consumer_key
-set CONSUMER_SECRET=your_consumer_secret
-set ACCESS_TOKEN=your_access_token
-set ACCESS_SECRET=your_access_secret
-```
+
+  ```
+  set CONSUMER_KEY=your_consumer_key
+  set CONSUMER_SECRET=your_consumer_secret
+  set ACCESS_TOKEN=your_access_token
+  set ACCESS_SECRET=your_access_secret
+  ```
 
 === "Windows Powershell"
-```
-$env:CONSUMER_KEY="your_consumer_key"
-$env:CONSUMER_SECRET="your_consumer_secret"
-$env:ACCESS_TOKEN="your_access_token"
-$env:ACCESS_SECRET="your_access_secret"
-```
+
+  ```
+  $env:CONSUMER_KEY="your_consumer_key"
+  $env:CONSUMER_SECRET="your_consumer_secret"
+  $env:ACCESS_TOKEN="your_access_token"
+  $env:ACCESS_SECRET="your_access_secret"
+  ```
 
 **Genius API Tokens**
 
 === "macOS/Linux"
-```
-export GENIUS_ACCESS_TOKEN=your_genius_access_token
-```
+
+  ```
+  export GENIUS_ACCESS_TOKEN=your_genius_access_token
+  ```
 
 === "Windows Command Line"
-```
-set GENIUS_ACCESS_TOKEN=your_genius_access_token
-```
+
+  ```
+  set GENIUS_ACCESS_TOKEN=your_genius_access_token
+  ```
 
 === "Windows Powershell"
-```
-$env:GENIUS_ACCESS_TOKEN="your_genius_access_token"
-```
+
+  ```
+  $env:GENIUS_ACCESS_TOKEN="your_genius_access_token"
+  ```
 
 
 **🦄 Run Fast API using uvicorn**
