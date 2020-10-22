@@ -6,10 +6,18 @@ from nltk.tokenize import RegexpTokenizer
 
 from ..config import Config
 
+import ssl
 
+try:
+    _create_unverified_https_context = ssl._create_unverified_context
+except AttributeError:
+    pass
+else:
+    ssl._create_default_https_context = _create_unverified_https_context
 
 nltk.download("stopwords")
 nltk.download("punkt")
+
 
 class TwitterUser:
 
@@ -53,3 +61,10 @@ class TwitterUser:
         word_distribution = nltk.FreqDist(all_words)
         top_words = word_distribution.most_common(limit)
         return top_words
+
+    ''' We can cross reference the text'''
+
+
+	
+	
+	
