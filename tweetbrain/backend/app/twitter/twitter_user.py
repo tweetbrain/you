@@ -45,17 +45,17 @@ class TwitterUser:
         self.stopwords.add(handle)
 
 
-    def get_top_words(self, limit: int = 10) -> list:
+    def get_top_words(self, limit: int = 10, word_len_min: int = 2) -> list:
         '''
         Return top common words from tweets
         '''
         all_words = list()
 
         for tweet in self.timeline:
-            print(tweet.text, "\n-----\n\n\n")
+            # print(tweet.text, "\n-----\n\n\n")
             words = self.tokenizer.tokenize(tweet.text)
             for word in words:
-                if len(word) > 2 and word not in self.stopwords:
+                if len(word) > word_len_min and word not in self.stopwords:
                     all_words.append(word.lower())
 
         word_distribution = nltk.FreqDist(all_words)
@@ -63,8 +63,3 @@ class TwitterUser:
         return top_words
 
     ''' We can cross reference the text'''
-
-
-	
-	
-	
