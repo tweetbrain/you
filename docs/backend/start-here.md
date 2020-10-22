@@ -63,19 +63,16 @@ You should find yourself here:
 There are a good amount of depencies for this project -- it will be good practice to use a virtual environment, albeit not necessary.
 
 === "macOS/Linux"
-
   ```
   python3 -m venv env
   ```
 
 === "Windows Command Line"
-
   ```
   python -m venv env
   ```
 
 === "Windows Powershell"
-
   ```
   python -m venv env
   ```
@@ -90,7 +87,6 @@ The last argument is the location to create the virtual environment. Generally, 
   source env/bin/activate
   ```
 === "Windows Command Line"
-
   ```
   .\env\Scripts\activate.bat
   ```
@@ -132,7 +128,6 @@ To set environmental variables, follow these instructions:
 !!! Twitter API Tokens/Secrets
 
 === "macOS/Linux"
-
   ``` bash
   export CONSUMER_KEY=your_consumer_key
   export CONSUMER_SECRET=your_consumer_secret
@@ -141,16 +136,14 @@ To set environmental variables, follow these instructions:
   ```
 
 === "Windows Command Line"
-
   ``` bat
   set CONSUMER_KEY=your_consumer_key
   set CONSUMER_SECRET=your_consumer_secret
   set ACCESS_TOKEN=your_access_token
   set ACCESS_SECRET=your_access_secret
   ```
-  
-=== "Windows Powershell"
 
+=== "Windows Powershell"
   ``` powershell
   $env:CONSUMER_KEY="your_consumer_key"
   $env:CONSUMER_SECRET="your_consumer_secret"
