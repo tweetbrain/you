@@ -11,24 +11,14 @@ class App extends React.Component{
     super();
     this.state = {
       value: '',
-      full_title: ''
+      info: [],
+      full_title: '',
+      image_url: require ("./question.jpg")
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-
-  componentDidMount() {
-    fetch("song.json") //fetches json object
-        .then(response => response.json()) //returns a promise that needs to be turned into a javascript object
-        //data from api
-        .then(response => {
-            console.log(response[0].full_title);
-            this.setState({
-                full_title: response[0].full_title
-            })
-        });
-  } 
 
 
   handleChange(event) {
@@ -37,8 +27,23 @@ class App extends React.Component{
   }
 
   handleSubmit(event) {
-    alert('Twitter handle was submitted: ' + this.state.value);
     event.preventDefault();
+    fetch(`/songs/match?handle=${this.state.value}`, {
+      headers: new Headers ({
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      })})
+
+      .then(response => response.json()) //returns a promise that needs to be turned into a javascript object
+      //data from api
+      .then(response => {
+        // console.log(response)
+          // console.log(response[0].full_title);
+          this.setState({
+              full_title: response[0].full_title,
+              image_url: response[0].primary_artist.image_url
+          })
+      })
   }
 
   render() {
@@ -47,7 +52,7 @@ class App extends React.Component{
         <Navigation/>
         <Logo/>
         <ImageLinkForm value={this.state.value} handleChange={this.handleChange} handleSubmit={this.handleSubmit}/>
-        <Song full_title={this.state.full_title}/>
+        <Song full_title={this.state.full_title} image_url={this.state.image_url}/>
       </div>
     )
   }
