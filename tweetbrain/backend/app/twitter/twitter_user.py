@@ -1,3 +1,5 @@
+import re
+
 import tweepy
 import nltk
 from nltk.corpus import stopwords
@@ -63,3 +65,19 @@ class TwitterUser:
         return top_words
 
     ''' We can cross reference the text'''
+    def get_top_hastags(self, limit: int = 10, word_len_min: int = 2) -> list:
+        '''
+        Return top common hashtags from tweets
+        '''
+        all_words = list()
+
+        for tweet in self.timeline:
+            # print(tweet.text, "\n-----\n\n\n")
+            words = re.findall(r"(\#[a-zA-Z]+\b)(?!;)", tweet.text)
+            for word in words:
+                if len(word) > word_len_min and word not in self.stopwords:
+                    all_words.append(word.lower())
+
+        word_distribution = nltk.FreqDist(all_words)
+        hashtags = word_distribution.most_common(limit)
+        return hashtags
