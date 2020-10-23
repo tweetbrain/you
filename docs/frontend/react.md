@@ -33,6 +33,7 @@ These links are helpful for learning React
 
 ### Blogs to Follow 📖
 
+* [Introduction to web development with React](https://fullstackopen.com/en/about/)
 * [5 part React starter kit tutorial](https://blog.glitch.com/post/react-starter-kit)
 * [The Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react)
 * [Intro to React testing library](https://kentcdodds.com/blog/introducing-the-react-testing-library)
