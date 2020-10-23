@@ -1,5 +1,4 @@
 import re
-
 import tweepy
 import nltk
 from nltk.corpus import stopwords
@@ -44,6 +43,7 @@ class TwitterUser:
         self.bio = self.user.description
         self.timeline = self.user.timeline(count=200)
         self.num_of_tweets = len(self.timeline)
+        self.verified = self.user.verified
         self.stopwords.add(handle)
 
 
@@ -64,8 +64,8 @@ class TwitterUser:
         top_words = word_distribution.most_common(limit)
         return top_words
 
-    ''' We can cross reference the text'''
-    def get_top_hastags(self, limit: int = 10, word_len_min: int = 2) -> list:
+
+    def get_top_hashtags(self, limit: int = 10, word_len_min: int = 2) -> list:
         '''
         Return top common hashtags from tweets
         '''
@@ -81,3 +81,36 @@ class TwitterUser:
         word_distribution = nltk.FreqDist(all_words)
         hashtags = word_distribution.most_common(limit)
         return hashtags
+
+
+    def get_verified_users(self):
+        '''
+        Return top verified users that self retweeted
+        '''
+        verified_users = list()
+        for tweet in self.user.timeline(count=25):
+
+            status = self.api.get_status(tweet.id, tweet_mode="extended")
+            if hasattr(status, "retweeted_status"):  # Check if Retweet
+                try:
+                    handl = re.search(r"(\@[a-zA-Z]+\b)", tweet.text)
+                    try:
+                        h = handl.group()
+                        h = h.split('@')[1]
+
+                        auth = tweepy.AppAuthHandler(Config.CONSUMER_KEY, Config.CONSUMER_SECRET)
+                        api = tweepy.API(auth, wait_on_rate_limit=True)  # create an API object
+                        usr = api.get_user(h)
+
+                        if usr.verified:
+                            verified_users.append(h)
+
+                    except IndexError:
+                        print()
+
+                except AttributeError:
+                    print()
+
+        word_distribution = nltk.FreqDist(verified_users)
+        fin = word_distribution.most_common(5)
+        return fin
