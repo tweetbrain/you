@@ -30,6 +30,10 @@ These links are helpful for learning React
 
 ![simple tut](https://github.com/tweetbrain/you/blob/main/docs/frontend/misc_images/simpleTut.png?raw=true)
 
+* **freeCodeCamp.org** - [React](https://www.youtube.com/watch?v=DLX62G4lc44) - 305 mins
+
+![simple tut](https://github.com/tweetbrain/you/blob/main/docs/frontend/misc_images/org.png?raw=true)
+
 
 ### Blogs to Follow 📖
 
