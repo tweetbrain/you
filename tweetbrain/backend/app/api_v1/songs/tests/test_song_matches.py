@@ -1,6 +1,7 @@
 from ....twitter.twitter_user import TwitterUser
 from ....genius.match import Match
 
+from .. import utils
 
 user = TwitterUser("MontellFish")
 matcher = Match()
@@ -18,3 +19,9 @@ def test_basic_match():
 
     print(query)
     print(matcher.search_songs(query))
+
+
+def test_utils():
+    songs = utils.match_with_top_words("MontellFish")
+
+    print(songs)
