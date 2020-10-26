@@ -1,6 +1,6 @@
-# React 
+# React
 
-For intermediate and Experienced individuals it is better to start reading Documentation to get a quick grasp of the technology 
+For intermediate and Experienced individuals it is better to start reading Documentation to get a quick grasp of the technology
 
 For the veterans :bearded_person: 	:point_down:
 
@@ -13,19 +13,19 @@ These links are helpful for learning React
 
 * **Net Ninja** - known for his web development series on youtube make sure to definitely check out first if you are a beginner
   * [React + Redux + Firebase](https://www.youtube.com/watch?v=Oi4v5uxTY5o&list=PL4cUxeGkcC9iWstfXntcj8f-dFZ4UtlN3) - 263 mins
-  
+
 ![net ninja](https://github.com/tweetbrain/you/blob/main/docs/frontend/misc_images/netNinja.png?raw=true)
 
 * **Traversy Media** - Crash Course
   * [React Crash Course](https://www.youtube.com/watch?v=sBws8MSXN7A) - 60 mins
-  
+
 ![traversy media](https://github.com/tweetbrain/you/blob/main/docs/frontend/misc_images/TraversyMedia.png?raw=true)
 
 * **Dev Ed** - known for his humorous method of teaching try him out
   * [Intro to React](https://www.youtube.com/watch?v=dGcsHMXbSOA) - 60 mins
-  
+
 ![dev ed](https://github.com/tweetbrain/you/blob/main/docs/frontend/misc_images/DevEd.png?raw=true)
-  
+
 * **SimpleTut** - [React + Node.js](https://www.youtue.com/watch?v=nusgoj74a3Y) - 50 mins
 
 ![simple tut](https://github.com/tweetbrain/you/blob/main/docs/frontend/misc_images/simpleTut.png?raw=true)
@@ -45,3 +45,6 @@ These links are helpful for learning React
 * [Updates and News](https://dev.to/)
 * [Learn to build some great UI ](https://letsbuildui.dev/)
 * [Flavio Copes Blog - React Tutorials](https://flaviocopes.com/tags/react/)
+* [Overreacted by Dan Abramov](https://overreacted.io/)
+* [A Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/)
+* [Writing Resilient Components](https://overreacted.io/writing-resilient-components/)
