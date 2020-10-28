@@ -48,3 +48,5 @@ These links are helpful for learning React
 * [Overreacted by Dan Abramov](https://overreacted.io/)
 * [A Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/)
 * [Writing Resilient Components](https://overreacted.io/writing-resilient-components/)
+* [Useful React Components and Libraries](https://github.com/brillout/awesome-react-components)
+* [React + Typescript Cheatsheet](https://react-typescript-cheatsheet.netlify.app/)
