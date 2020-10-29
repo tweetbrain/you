@@ -1,0 +1,786 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <link rel="canonical" href="https://docs.tweetbrain.tisuela.com/backend/start-here/">
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
+    
+    
+      
+        <title>Start Here - TweetBrain Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bc7e593a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab28b872.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#start-here" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://docs.tweetbrain.tisuela.com/" title="TweetBrain Docs" class="md-header-nav__button md-logo" aria-label="TweetBrain Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            TweetBrain Docs
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Start Here
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/tweetbrain/you/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    tweetbrain/you
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://docs.tweetbrain.tisuela.com/" title="TweetBrain Docs" class="md-nav__button md-logo" aria-label="TweetBrain Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    TweetBrain Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/tweetbrain/you/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    tweetbrain/you
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." class="md-nav__link">
+      TweetBrain
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Backend
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Backend" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Backend
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fastapi/" class="md-nav__link">
+      Fast API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Start Here
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Start Here
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    Structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#app-fast-api" class="md-nav__link">
+    app - Fast API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#songs-fast-api" class="md-nav__link">
+    songs - Fast API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genius-lyricgenius" class="md-nav__link">
+    genius - lyricgenius
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#twitter-tweepy" class="md-nav__link">
+    twitter - tweepy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    Quick Start
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-1-secretsjson" class="md-nav__link">
+    Method 1: secrets.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-2-set-environmental-variables" class="md-nav__link">
+    Method 2: Set environmental variables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-the-backend-api" class="md-nav__link">
+    Running the Backend API
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Frontend
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Frontend" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Frontend
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../frontend/react/" class="md-nav__link">
+      React
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../frontend/start-here/" class="md-nav__link">
+      Start here
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    Structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#app-fast-api" class="md-nav__link">
+    app - Fast API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#songs-fast-api" class="md-nav__link">
+    songs - Fast API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genius-lyricgenius" class="md-nav__link">
+    genius - lyricgenius
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#twitter-tweepy" class="md-nav__link">
+    twitter - tweepy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    Quick Start
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-1-secretsjson" class="md-nav__link">
+    Method 1: secrets.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-2-set-environmental-variables" class="md-nav__link">
+    Method 2: Set environmental variables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-the-backend-api" class="md-nav__link">
+    Running the Backend API
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/tweetbrain/you/edit/master/docs/backend/start-here.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="start-here">Start Here</h1>
+<h2 id="structure">Structure</h2>
+<p>The backend is divided into three parts.
+<div class="highlight"><pre><span></span><code>└───backend
+    └───app &lt;-- Our main Backend App (Fast API)
+      ├───songs &lt;-- routes for our Song matching API
+      ├───genius &lt;-- Objects and tests for Genius API
+      └───twitter &lt;-- Objects and tests for Twitter API
+</code></pre></div>
+<code>genius</code> and <code>twitter</code> are called within <code>songs</code>.</p>
+<h3 id="app-fast-api">app - Fast API</h3>
+<p>Our main app uses the Fast API Python Web Framework
+Info <a href="https://docs.tweetbrain.tisuela.com/backend/fastapi/">here</a></p>
+<h3 id="songs-fast-api">songs - Fast API</h3>
+<p>This portion of the application holds all our routes for our Song API endpoints.</p>
+<p>Our objects from <code>genius</code> and <code>twitter</code> are used within <code>songs</code> to return songs which match a user's timeline (timeline = list of tweets).</p>
+<h3 id="genius-lyricgenius">genius - lyricgenius</h3>
+<p>We are using a Python wrapper for Genius's API called <code>lyricgenius</code></p>
+<p><a href="https://lyricsgenius.readthedocs.io/en/master/">🧠 find out more about <code>lyricgenius</code></a></p>
+<h3 id="twitter-tweepy">twitter - tweepy</h3>
+<p>We are using a Python wrapper for Twitter's API called <code>tweepy</code></p>
+<p><a href="http://docs.tweepy.org/en/latest/">🧠 find out more about <code>tweepy</code></a></p>
+<p>In addition to that, we are using <code>nltk</code> to process the tweets and figure out the most common words from a user's timeline.</p>
+<h2 id="quick-start">Quick Start</h2>
+<p>Below are the instructions for running Fast API locally</p>
+<h3 id="installation">Installation</h3>
+<p><strong>👩‍👧 Clone repository</strong>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/tweetbrain/you
+cd you
+</code></pre></div></p>
+<p>Navigate to <code>tweetbrain/backend</code>
+<div class="highlight"><pre><span></span><code>cd tweetbrain
+cd backend
+</code></pre></div></p>
+<p>You should find yourself here:
+<div class="highlight"><pre><span></span><code>└───tweetbrain
+    └───backend &lt;-- you are here
+</code></pre></div></p>
+<p><strong>🐍 Create Python virtual environment</strong></p>
+<p>There are a good amount of depencies for this project -- it will be good practice to use a virtual environment, albeit not necessary.</p>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">macOS/Linux</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>python3 -m venv env
+</code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Windows Command Line</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>python -m venv env
+</code></pre></div>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Windows Powershell</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>python -m venv env
+</code></pre></div>
+</div>
+</div>
+<p>The last argument is the location to create the virtual environment. Generally, you can just create this in your project and call it env.</p>
+<p><strong>✅ Activate virtual environment</strong></p>
+<div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">macOS/Linux</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>source env/bin/activate
+</code></pre></div>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Windows Command Line</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>.\env\Scripts\activate.bat
+</code></pre></div>
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">Windows Powershell</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>.\env\Scripts\activate.ps1
+</code></pre></div>
+</div>
+</div>
+<p><strong>📦 Navigate to the repository folder and install packages</strong></p>
+<div class="highlight"><pre><span></span><code>python -m pip install -r requirements.txt
+</code></pre></div>
+<h3 id="configuration">Configuration</h3>
+<p><strong>🔐 This portion provides authentication information, which is NOT in our repository</strong></p>
+<h4 id="method-1-secretsjson">Method 1: secrets.json</h4>
+<p>💾 Those who are a part of our Web Jam team have access to a <code>secrets.json</code> file. This is the simplest way -- even if you don't have this file, you can make your own with the same name.
+Download that file, and paste it within <code>tweetbrain/backend</code>:
+<div class="highlight"><pre><span></span><code>└───tweetbrain
+    └───backend &lt;-- paste secrets.json within here
+        └───secrets.json
+</code></pre></div></p>
+<h4 id="method-2-set-environmental-variables">Method 2: Set environmental variables</h4>
+<p>🌳 If you do not have our json file, or if you cannot use it for some reason, you will need to write environmental variables within your terminal. <strong>These variables must be made in the terminal/shell where your virtual environment is running</strong></p>
+<p>The environmental variables are specified within <a href="https://github.com/tweetbrain/you/blob/main/tweetbrain/backend/app/config.py"><code>tweetbrain/backend/config.py</code></a>.</p>
+<p>To set environmental variables, follow these instructions:</p>
+<div class="tabbed-set" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">macOS/Linux</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CONSUMER_KEY</span><span class="o">=</span>your_consumer_key
+<span class="nb">export</span> <span class="nv">CONSUMER_SECRET</span><span class="o">=</span>your_consumer_secret
+<span class="nb">export</span> <span class="nv">ACCESS_TOKEN</span><span class="o">=</span>your_access_token
+<span class="nb">export</span> <span class="nv">ACCESS_SECRET</span><span class="o">=</span>your_access_secret
+</code></pre></div>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Windows Command Line</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="k">set</span> <span class="nv">CONSUMER_KEY</span><span class="p">=</span>your_consumer_key
+<span class="k">set</span> <span class="nv">CONSUMER_SECRET</span><span class="p">=</span>your_consumer_secret
+<span class="k">set</span> <span class="nv">ACCESS_TOKEN</span><span class="p">=</span>your_access_token
+<span class="k">set</span> <span class="nv">ACCESS_SECRET</span><span class="p">=</span>your_access_secret
+</code></pre></div>
+</div>
+<input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><label for="__tabbed_3_3">Windows Powershell</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nv">$env:CONSUMER_KEY</span><span class="p">=</span><span class="s2">&quot;your_consumer_key&quot;</span>
+<span class="nv">$env:CONSUMER_SECRET</span><span class="p">=</span><span class="s2">&quot;your_consumer_secret&quot;</span>
+<span class="nv">$env:ACCESS_TOKEN</span><span class="p">=</span><span class="s2">&quot;your_access_token&quot;</span>
+<span class="nv">$env:ACCESS_SECRET</span><span class="p">=</span><span class="s2">&quot;your_access_secret&quot;</span>
+</code></pre></div>
+</div>
+</div>
+<p><strong>Genius API Tokens</strong></p>
+<div class="tabbed-set" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">macOS/Linux</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>export GENIUS_ACCESS_TOKEN=your_genius_access_token
+</code></pre></div>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Windows Command Line</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>set GENIUS_ACCESS_TOKEN=your_genius_access_token
+</code></pre></div>
+</div>
+<input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><label for="__tabbed_4_3">Windows Powershell</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>$env:GENIUS_ACCESS_TOKEN=&quot;your_genius_access_token&quot;
+</code></pre></div>
+</div>
+</div>
+<h3 id="running-the-backend-api">Running the Backend API</h3>
+<p><strong>🦄 Run Fast API using uvicorn</strong></p>
+<p>Run uvicorn.
+<div class="highlight"><pre><span></span><code>uvicorn app.main:app --reload
+</code></pre></div></p>
+<p>You’ll see output similar to this:</p>
+<p><div class="highlight"><pre><span></span><code>←[32mINFO←[0m:     Uvicorn running on ←[1mhttp://127.0.0.1:8000←[0m (Press CTRL+C to quit)
+←[32mINFO←[0m:     Started reloader process [←[36m←[1m38240←[0m] using ←[36m←[1mstatreload←[0m
+←[32mINFO←[0m:     Started server process [←[36m13020←[0m]
+←[32mINFO←[0m:     Waiting for application startup.
+←[32mINFO←[0m:     Application startup complete.
+</code></pre></div>
+donezo</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../fastapi/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Fast API
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../frontend/react/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                React
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.6a3d08fc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
