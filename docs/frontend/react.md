@@ -30,6 +30,10 @@ These links are helpful for learning React
 
 ![simple tut](https://github.com/tweetbrain/you/blob/main/docs/frontend/misc_images/simpleTut.png?raw=true)
 
+* **The Beginner's Guide to React** - [React](https://egghead.io/courses/the-beginner-s-guide-to-react) - 147 mins
+
+![simple tut](https://github.com/tweetbrain/you/blob/main/docs/frontend/misc_images/eggHead.png?raw=true)
+
 
 ### Blogs to Follow 📖
 
