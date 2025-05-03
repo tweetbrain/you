@@ -34,6 +34,9 @@ These links are helpful for learning React
 
 ![simple tut](https://github.com/tweetbrain/you/blob/main/docs/frontend/misc_images/org.png?raw=true)
 
+* **Scrimba** - Known for its unique feature is "scrims," interactive screencasts that let you edit code directly in the browser, simulating pair programming with instructors. This hands-on approach, combined with bite-sized lessons, coding challenges, and projects (e.g., building games, apps, or websites), helps you learn faster by practicing as you go.
+  * [JavaScript, React,NextJS, Vue, Angular, Node.js, TypeScript](https://scrimba.com/home)
+
 
 ### Blogs to Follow 📖
 
